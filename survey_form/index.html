@@ -1,134 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
 
     <title>Title of the document</title>
-    <meta name="description" content="The HTML5 Herald">
-    <meta name="author" content="SitePoint">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" type="text/css" href="./index.css">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Bangers|Charmonman|Monoton" rel="stylesheet">
-</head>
+    <meta name="description" content="The HTML5 Herald" />
+    <meta name="author" content="SitePoint" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Serif+SC"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Bangers|Charmonman|Monoton"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="navi">
-            <div class="logo">
-                <h2>Zdybel</h2>
-            </div>
+      <div class="navi">
+        <div class="logo"><h2>Zdybel</h2></div>
 
-
-            <nav>
-
-                <ul>
-                    <li><a href=#>Home</a></li>
-                    <li><a href=#>Contact</a></li>
-                    <li><a href=#>About</a></li>
-                    <li><a href=#>Log In</a></li>
-                </ul>
-
-            </nav>
-        </div>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Log In</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-
-
-    
     <h1 id="title">Survey Form</h1>
 
-
     <div class="container">
-        </br>
-        <p id="description">Let us know how we can improve freeCodeCamp</p>
+      <p id="description">Let us know how we can improve freeCodeCamp</p>
 
-        <form id="surver_form">
+      <form id="surver_form">
+        <div class="form-group">
+          <label for="name-label">Name:</label>
+          <input
+            type="text"
+            id="name-label"
+            placeholder="Enter your name"
+            required
+          />
 
-            <div class="form-group">
-                <label for="name-label">Name:</label>
-                <input type="text" id="name-label" placeholder="Enter your name" required></br>
+          <label for="email-label">Email:</label>
+          <input
+            type="email"
+            id="email-label"
+            placeholder="Enter your email"
+            required
+          />
 
-                <label for="email-label">Email:</label>
-                <input type="email" id="email-label" placeholder="Enter your email" required></br>
+          <label for="number-label">Age:</label>
+          <input
+            type="number"
+            id="number-label"
+            placeholder="Enter your age"
+            min="12"
+            max="115"
+            required
+          />
 
+          <label for="dropdown-label"
+            >Which option best describes your current role?</label
+          >
 
-                <label for="number-label">Age:</label>
-                <input type="number" id="number-label" placeholder="Enter your age" min="12" max="115" required></br>
+          <select id="dropdown">
+            <option value="selecanoption" disabled="disabled"
+              >Select an option</option
+            >
+            <option value="student">Student</option>
+            <option value="fulltimejob">Full Time Job</option>
+            <option value="fulltimelearner">Full Time Learner</option>
+            <option value="prefernottosay">Prefer Not To Say</option>
+            <option value="other">Other</option>
+          </select>
 
-                <label for="dropdown-label">Which option best describes your current role?</label></br>
+          <label
+            >How likely is that you would recommend freeCodeCamp to a
+            friend?</label
+          >
 
-                <select id="dropdown">
-                    <option value="selecanoption" disabled="disabled">Select an option</option>
-                    <option value="student">Student</option>
-                    <option value="fulltimejob">Full Time Job</option>
-                    <option value="fulltimelearner">Full Time Learner</option>
-                    <option value="prefernottosay">Prefer Not To Say</option>
-                    <option value="other">Other</option>
-                </select></br></br>
-
-                <label>How likely is that you would recommend freeCodeCamp to a friend?</label>
-
-                <div class="radiogroup">
-                    </br>
-                    <div>
-                        <label id="definitely" for="definitely">Definitely</label>
-                        <input type="radio" id="definitely" name="opinionChoice1">
-                    </div>
-                    <div>
-                        <label for="maybe">Maybe</label>
-                        <input type="radio" id="maybe" name="opinionChoice2">
-                    </div>
-                    <div>
-                        <label for="notsure">Not Sure</label>
-                        <input type="radio" id="notsure" name="opinionChoice3">
-                    </div>
-                </div></br>
-
-                <label> Things that should be improved in the future
-                    (Check all that apply):</label>
-
-                </br></br>
-                <div class="checkboxgroup">
-                    <label for="front">Front End Projects</label>
-                    <input type="checkbox" id="front" value="attribute">
-
-                    <label for="back">Back End Projects</label>
-                    <input type="checkbox" id="back" value="attribute">
-
-                    <label for="data">Data Visualization</label>
-                    <input type="checkbox" id="data" value="attribute">
-
-                    <label for="challenges">Challenges</label>
-                    <input type="checkbox" id="challenges" value="attribute">
-
-                    <label for="opensource">Open Source Community</label>
-                    <input type="checkbox" id="opensource" value="attribute">
-
-                </div>
-                </br></br>
-
-                <label>Any Comments or Suggestions?</label></br></br>
-                <textarea placeholder="Enter your comment here..." cols="50" rows="4"></textarea>
-
+          <div class="radiogroup">
+            <div>
+              <label id="definitely" for="definitely">Definitely</label>
+              <input type="radio" id="definitely" name="opinionChoice1" />
             </div>
+            <div>
+              <label for="maybe">Maybe</label>
+              <input type="radio" id="maybe" name="opinionChoice2" />
+            </div>
+            <div>
+              <label for="notsure">Not Sure</label>
+              <input type="radio" id="notsure" name="opinionChoice3" />
+            </div>
+          </div>
 
+          <label>
+            Things that should be improved in the future (Check all that
+            apply):</label
+          >
 
+          <div class="checkboxgroup">
+            <label for="front">Front End Projects</label>
+            <input type="checkbox" id="front" value="attribute" />
 
-        </form>
-        </br></br>
-        <div class="button">
-            <button id="button">Submit</button>
+            <label for="back">Back End Projects</label>
+            <input type="checkbox" id="back" value="attribute" />
+
+            <label for="data">Data Visualization</label>
+            <input type="checkbox" id="data" value="attribute" />
+
+            <label for="challenges">Challenges</label>
+            <input type="checkbox" id="challenges" value="attribute" />
+
+            <label for="opensource">Open Source Community</label>
+            <input type="checkbox" id="opensource" value="attribute" />
+          </div>
+
+          <label>Any Comments or Suggestions?</label>
+          <textarea
+            placeholder="Enter your comment here..."
+            cols="50"
+            rows="4"
+          ></textarea>
         </div>
-        </br></br>
+      </form>
+
+      <div class="button"><button id="button">Submit</button></div>
     </div>
-    </br>
-
-</body>
-
-
-
-
+  </body>
 </html>
