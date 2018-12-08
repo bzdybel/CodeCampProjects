@@ -1,124 +1,118 @@
-body{
-background-color: #66CDAA;
-font-family:'Noto Serif SC', serif;
-margin:0;
+body {
+  background-color: #66cdaa;
+  font-family: "Noto Serif SC", serif;
+  margin: 0;
 }
-.navi{
-    width: 80%;
-    margin: 0 auto;
+.navi {
+  width: 80%;
+  margin: 0 auto;
 }
-nav{
-    float: right;
-    display:flex;
+nav {
+  float: right;
+  display: flex;
 }
-header{
-    background: #F5F5F5;
+header {
+  background: #f5f5f5;
 }
-header::after{
-    content: "";
-    display: table;
-    clear: both;
+header::after {
+  content: "";
+  display: table;
+  clear: both;
 }
-nav ul{
-    list-style: none;
+nav ul {
+  list-style: none;
 }
-nav li{
-    display: inline-block;
-    margin-left: 50px;
+nav li {
+  display: inline-block;
+  margin-left: 50px;
 }
-nav a{
-    text-decoration: none;
-    color: black;
-    font-family: 'Bangers';
-    text-transform: uppercase;
-    font-size: 25px;
-    font-family: 'Courier New', Courier, monospace;
+nav a {
+  text-decoration: none;
+  color: black;
+  font-family: "Bangers";
+  text-transform: uppercase;
+  font-size: 25px;
 }
-nav a:hover{
-    display: inline-block;
-    text-align: center;
-    color:#66CDAA;
-    
+nav a:hover {
+  display: inline-block;
+  text-align: center;
+  color: #66cdaa;
 }
-.logo{
-    float: left; 
-    font-family: 'Bangers', cursive;
-    color: #66CDAA;
-    
+.logo {
+  float: left;
+  font-family: "Bangers", cursive;
+  color: #66cdaa;
 }
-#title{
-    color:black;
-    text-align: center;
+#title {
+  color: black;
+  text-align: center;
 }
-#description{
-    text-align: center;
+#description {
+  text-align: center;
 }
 
-.container{
-    margin-left: auto;
-    margin-right: auto; 
-    width: 70%;
-    font-family: 'Raleway', sans-serif;
-    background: #F5F5F5;
-    border-radius: 10px;
-    
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  font-family: "Raleway", sans-serif;
+  background: #f5f5f5;
+  border-radius: 10px;
 }
-#star{
-    font-size: 20px;
-}
-
-.form-group{
-    position: relative;
-    display: block;
-    margin: 0 auto;
-    padding: 4px 4px; 
-    width: 30%;
+#star {
+  font-size: 20px;
 }
 
- input{
-    display: block;
-    padding: 4px 4px; 
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%; 
-} 
-input:focus{
-    outline: none;
+.form-group {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  padding: 4px 4px;
+  width: 30%;
 }
-input:required:invalid{
-    border:2px solid #F08080;
-    border-radius: 3px;
-}
-.button{
-    text-align: center;
-     
-}
-#button{
-padding-top: 10px;
-padding-bottom: 10px;
-padding-left: 20px;
-padding-right: 20px;
-background:#87CEEB;
-border:transparent;
-color: white;
-font-family: 'Noto Serif SC', serif;
-border-radius: 5px;
 
+input {
+  display: block;
+  padding: 4px 4px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
-#button:hover{
-    background:#B0E0E6;
+input:focus {
+  outline: none;
 }
-#dropdown{
-    padding: 8px 8px; 
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%; 
+input:required:invalid {
+  border: 2px solid #f08080;
+  border-radius: 3px;
 }
-textarea{
-    outline: none;
-    resize: none;
-    background: #F5F5F5;
+.button {
+  text-align: center;
 }
-textarea:hover{
-    background: #F5F5F5;
+#button {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background: #87ceeb;
+  border: transparent;
+  color: white;
+  font-family: "Noto Serif SC", serif;
+  border-radius: 5px;
+}
+#button:hover {
+  background: #b0e0e6;
+}
+#dropdown {
+  padding: 8px 8px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+textarea {
+  outline: none;
+  resize: none;
+  background: #f5f5f5;
+}
+textarea:hover {
+  background: #f5f5f5;
 }
