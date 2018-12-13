@@ -48,7 +48,7 @@ header::after {
   margin: auto 0;
 }
 .form {
-  display: flex;
+  display: block;
   width: 50%;
   margin: 0 auto;
   background-color: #f5f5f5;
@@ -56,5 +56,21 @@ header::after {
 }
 
 .form__tittle {
-  margin: 0 auto;
+  padding-top: 1rem;
+  text-align: center;
+}
+.form__item {
+  display: flex;
+  justify-content: center;
+}
+.form__item--input {
+  padding: 4px 4px;
+  margin-left: 0.5rem;
+}
+.form__item--input:required:invalid {
+  border: 2px solid #f08080;
+  border-radius: 3px;
+}
+.form__item--input:focus {
+  outline: none;
 }
