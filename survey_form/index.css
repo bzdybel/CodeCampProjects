@@ -1,11 +1,7 @@
 body {
-  background-color: #66cdaa;
+  background-color: #66cdcc;
   font-family: "Noto Serif SC", serif;
   margin: 0;
-}
-
-.nav {
-  display: flex;
 }
 header {
   background: #f5f5f5;
@@ -15,7 +11,13 @@ header::after {
   display: table;
   clear: both;
 }
+.nav {
+  display: flex;
+}
+
 .nav__list {
+  width: 90%;
+  justify-content: flex-end;
   padding: 10;
   list-style: none;
   display: flex;
@@ -31,11 +33,12 @@ header::after {
   font-size: 25px;
 }
 .nav__link:hover {
-  color: #66cdaa;
+  color: #66cdcc;
 }
 .nav__link--logo {
+  margin-right: auto;
   font-family: "Bangers", cursive;
-  color: #66cdaa;
+  color: #66cdcc;
 }
 
 #title {
@@ -43,6 +46,7 @@ header::after {
   text-align: center;
 }
 #description {
+  padding-top: 20px;
   text-align: center;
 }
 
