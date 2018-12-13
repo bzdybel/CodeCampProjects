@@ -35,8 +35,10 @@ header::after {
 .nav__link:hover {
   color: #66cdcc;
 }
-.nav__link--logo {
+.nav__item--logo {
   margin-right: auto;
+}
+.nav__link--logo {
   font-family: "Bangers", cursive;
   color: #66cdcc;
 }
