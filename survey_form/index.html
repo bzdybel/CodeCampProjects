@@ -44,11 +44,11 @@
     <div class="tittle"><h1 class="tittle__item">Survey Form</h1></div>
 
     <form class="form-survey">
-      <legend class="form__tittle">
+      <legend class="form__survey--title">
         Lets us now how we can improve freeCodeCamp
       </legend>
 
-      <label for="name">Name: </label>
+      <label class="form-survey__label" for="name">Name: </label>
       <input
         type="text"
         id="name"
@@ -57,7 +57,7 @@
         placeholder="Leonardo DiCaprio"
       />
 
-      <label for="email">Email: </label>
+      <label class="form-survey__label" for="email">Email: </label>
       <input
         type="email"
         id="email"
@@ -66,18 +66,18 @@
         placeholder="leonardo.dicaprio@gmail.com"
       />
 
-      <label for="number">Age: </label>
+      <label class="form-survey__label" for="number">Age: </label>
       <input
         type="number"
         id="number"
-        class="form-survey__input form-survey__input--numeric"
+        class="form-survey__input"
         placeholder="44"
         min="12"
         max="123"
         required
       />
 
-      <label for="form-survey__dropdown"
+      <label class="form-survey__label" for="form-survey__dropdown"
         >Which option best describes your current role?</label
       >
 
@@ -90,12 +90,11 @@
         <option value="other">Other</option>
       </select>
 
-      <div class="form-survey__radiobutton--label">
-        <label for="form-survey__radiobutton"
-          >How likely is that you would recommend freeCodeCamp to a
-          friend?</label
-        >
-      </div>
+      <label
+        class="form-survey__label form-survey__label--radiobutton"
+        for="form-survey__radiobutton"
+        >How likely is that you would recommend freeCodeCamp to a friend?</label
+      >
 
       <div class="form-survey__radiobutton">
         <div class="form-survey__radiobutton--group">
