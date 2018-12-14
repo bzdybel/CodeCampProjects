@@ -44,7 +44,7 @@
     <div class="tittle"><h1 class="tittle__item">Survey Form</h1></div>
 
     <form class="form-survey">
-      <legend class="form__survey--title">
+      <legend class="form-survey__title">
         Lets us now how we can improve freeCodeCamp
       </legend>
 
@@ -81,12 +81,12 @@
         >Which option best describes your current role?</label
       >
 
-      <select class="form-survey__dropdown">
-        <option value="selectanoption" disabled>Select an option</option>
+      <select id="form-survey__dropdown">
+        <option value="select_an_option" disabled>Select an option</option>
         <option value="student">Student</option>
-        <option value="fulltimejob">Full time job</option>
-        <option value="fulltimelearner">Full time learner</option>
-        <option value="prefernottosay">Prefer not to say</option>
+        <option value="full_time_job">Full time job</option>
+        <option value="full_time_learner">Full time learner</option>
+        <option value="prefer_not_to_say">Prefer not to say</option>
         <option value="other">Other</option>
       </select>
 
@@ -96,14 +96,17 @@
         >How likely is that you would recommend freeCodeCamp to a friend?</label
       >
 
-      <div class="form-survey__radiobutton">
+      <div class="form-survey__radiobutton" id="form-survey__radiobutton">
         <div class="form-survey__radiobutton--group">
           <input
             class="form-survet__input--radiobutton"
             type="radio"
             name="definitely"
+            id="definitely"
           />
-          <label class="form-survey__input--label">Definitely</label>
+          <label class="form-survey__input--label" for="definitely"
+            >Definitely</label
+          >
         </div>
 
         <div class="form-survey__radiobutton--group">
@@ -111,8 +114,9 @@
             class="form-survet__input--radiobutton"
             type="radio"
             name="maybe"
+            id="maybe"
           />
-          <label class="form-survey__input--label">Maybe</label>
+          <label class="form-survey__input--label" for="maybe">Maybe</label>
         </div>
 
         <div class="form-survey__radiobutton--group">
@@ -120,8 +124,11 @@
             class="form-survet__input--radiobutton"
             type="radio"
             name="notsure"
+            id="not_sure"
           />
-          <label class="form-survey__input--label">Not sure</label>
+          <label class="form-survey__input--label" id="not_sure"
+            >Not sure</label
+          >
         </div>
       </div>
     </form>
