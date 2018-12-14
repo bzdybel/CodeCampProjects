@@ -83,7 +83,7 @@ header::after {
   margin-left: 1rem;
 }
 
-#form-survey__dropdown {
+.form-survey__dropdown {
   padding: 6px 6px;
   margin-left: 30%;
   margin-right: 50%;
