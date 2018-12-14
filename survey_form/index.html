@@ -72,8 +72,59 @@
         id="number"
         class="form-survey__input form-survey__input--numeric"
         placeholder="44"
+        min="12"
+        max="123"
         required
       />
+
+      <label for="form-survey__dropdown"
+        >Which option best describes your current role?</label
+      >
+
+      <select class="form-survey__dropdown">
+        <option value="selectanoption" disabled>Select an option</option>
+        <option value="student">Student</option>
+        <option value="fulltimejob">Full time job</option>
+        <option value="fulltimelearner">Full time learner</option>
+        <option value="prefernottosay">Prefer not to say</option>
+        <option value="other">Other</option>
+      </select>
+
+      <div class="form-survey__radiobutton--label">
+        <label for="form-survey__radiobutton"
+          >How likely is that you would recommend freeCodeCamp to a
+          friend?</label
+        >
+      </div>
+
+      <div class="form-survey__radiobutton">
+        <div class="form-survey__radiobutton--group">
+          <input
+            class="form-survet__input--radiobutton"
+            type="radio"
+            name="definitely"
+          />
+          <label class="form-survey__input--label">Definitely</label>
+        </div>
+
+        <div class="form-survey__radiobutton--group">
+          <input
+            class="form-survet__input--radiobutton"
+            type="radio"
+            name="maybe"
+          />
+          <label class="form-survey__input--label">Maybe</label>
+        </div>
+
+        <div class="form-survey__radiobutton--group">
+          <input
+            class="form-survet__input--radiobutton"
+            type="radio"
+            name="notsure"
+          />
+          <label class="form-survey__input--label">Not sure</label>
+        </div>
+      </div>
     </form>
   </body>
 </html>
