@@ -61,11 +61,14 @@ body {
   padding: 6px;
   margin: 0 30% 1rem 30%;
 }
-.form-survey__input:required:invalid {
+.form-survey__input:invalid {
   border: 2px solid #f08080;
   border-radius: 3px;
+  box-shadow: none;
 }
-
+.form-survey__input:placeholder-shown {
+  border: 1px solid #ddd;
+}
 .form-survey__label {
   margin: 0.1rem 30% 0.1rem 30%;
 }
@@ -73,17 +76,17 @@ body {
   margin-bottom: 1rem;
 }
 .form-survey__label--recommendation {
-  margin: -0.2rem 0 0 1rem;
-  white-space: nowrap;
+  margin: -0.2rem 0 0 0.5rem;
 }
 .form-survey__label--plans {
-  margin: -0.2rem 0 0.5rem 1rem;
+  margin: -0.2rem 0 0.5rem 0.5rem;
+  white-space: nowrap;
 }
 .form-survey__input--checkbox {
   margin: 0.2rem 0 0.5rem 1rem;
 }
 .form-survey__dropdown {
-  padding: 6px 6px;
+  padding: 6px;
   margin: 0 50% 1.5rem 30%;
   border-color: lightgray;
   border-radius: 5px;
@@ -98,6 +101,7 @@ body {
   display: flex;
   font-size: 17px;
   margin-bottom: 0.5rem;
+  align-items: center;
 }
 .form-survey__checkbox-section {
   display: flex;
