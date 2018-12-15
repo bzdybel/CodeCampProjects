@@ -3,16 +3,10 @@ body {
   font-family: "Noto Serif SC", serif;
   margin: 0 0 1rem 0;
 }
-header {
-  background: #24292e;
-}
-header::after {
-  content: "";
-  display: table;
-  clear: both;
-}
+
 .nav {
   display: flex;
+  background: #24292e;
 }
 
 .nav__list {
@@ -43,10 +37,10 @@ header::after {
   font-size: 30px;
   color: #add8e6;
 }
-.tittle {
+.title {
   display: flex;
   justify-content: center;
-  margin: auto 0;
+  margin: 2rem auto 2rem auto;
 }
 .form-survey {
   display: flex;
@@ -79,7 +73,8 @@ header::after {
   margin-bottom: 1rem;
 }
 .form-survey__label--recommendation {
-  margin: -0.2rem 0 0.5rem 1rem;
+  margin: -0.2rem 0 0 1rem;
+  white-space: nowrap;
 }
 .form-survey__label--plans {
   margin: -0.2rem 0 0.5rem 1rem;
@@ -93,22 +88,23 @@ header::after {
   border-color: lightgray;
   border-radius: 5px;
 }
-.form-survey__radiobutton--section {
+.form-survey__radiobutton-section {
   display: flex;
   flex-direction: column;
   margin: 0 30% 1rem 30%;
 }
 
-.form-survey__radiobutton--wrapper {
+.form-survey__radiobutton-wrapper {
   display: flex;
   font-size: 17px;
+  margin-bottom: 0.5rem;
 }
-.form-survey__checkbox {
+.form-survey__checkbox-section {
   display: flex;
   flex-direction: column;
-  margin: 0 30% 2rem 30%;
+  margin: 0 30% 1.5rem 30%;
 }
-.form-survey__checkbox--wrapper {
+.form-survey__checkbox-wrapper {
   display: flex;
   font-size: 17px;
 }
@@ -118,15 +114,16 @@ header::after {
   border-radius: 5px;
 }
 .form-survey__button {
-  padding: 1rem;
-  margin-left: 42%;
-  margin-right: 42%;
+  padding: 6px;
+  margin-left: 30%;
+  margin-right: 30%;
   border: transparent;
   border-radius: 10px;
   background: #59ace0;
   font-size: 15px;
   color: whitesmoke;
+  cursor: pointer;
 }
 .form-survey__button:hover {
-  background-color: #24292e;
+  opacity: 0.5;
 }
