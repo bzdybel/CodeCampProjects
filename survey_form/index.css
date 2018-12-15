@@ -40,7 +40,7 @@ body {
 .title {
   display: flex;
   justify-content: center;
-  margin: 2rem auto 2rem auto;
+  margin: 2rem auto;
 }
 .form-survey {
   display: flex;
@@ -70,7 +70,7 @@ body {
   border: 1px solid #ddd;
 }
 .form-survey__label {
-  margin: 0.1rem 30% 0.1rem 30%;
+  margin: 0.1rem 30%;
 }
 .form-survey__label--radiobutton {
   margin-bottom: 1rem;
