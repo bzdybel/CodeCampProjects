@@ -69,7 +69,7 @@
       <label class="form-survey__label" for="age">Age: </label>
       <input
         type="age"
-        id="number"
+        id="age"
         class="form-survey__input"
         placeholder="44"
         min="12"
@@ -90,47 +90,149 @@
         <option value="other">Other</option>
       </select>
 
-      <label
-        class="form-survey__label form-survey__label--radiobutton"
-        for="form-survey__radiobutton"
-        >How likely is that you would recommend freeCodeCamp to a friend?</label
-      >
+      <legend class="form-survey__label form-survey__label--radiobutton">
+        How likely is that you would recommend freeCodeCamp to a friend?
+      </legend>
 
-      <div class="form-survey__radiobutton" id="form-survey__radiobutton">
-        <div class="form-survey__radiobutton--group">
+      <div class="form-survey__radiobutton--section">
+        <div class="form-survey__radiobutton--wrapper">
           <input
-            class="form-survet__input--radiobutton"
+            class="form-survey__input--radiobutton"
             type="radio"
-            name="definitely"
+            name="recommendation"
             id="definitely"
           />
-          <label class="form-survey__input--label" for="definitely"
+          <label class="form-survey__label--recommendation" for="definitely"
             >Definitely</label
           >
         </div>
 
-        <div class="form-survey__radiobutton--group">
+        <div class="form-survey__radiobutton--wrapper">
           <input
-            class="form-survet__input--radiobutton"
+            class="form-survey__input--radiobutton"
             type="radio"
-            name="maybe"
+            name="recommendation"
             id="maybe"
           />
-          <label class="form-survey__input--label" for="maybe">Maybe</label>
+          <label class="form-survey__label--recommendation" for="maybe"
+            >Maybe</label
+          >
         </div>
 
-        <div class="form-survey__radiobutton--group">
+        <div class="form-survey__radiobutton--wrapper">
           <input
-            class="form-survet__input--radiobutton"
+            class="form-survey__input--radiobutton"
             type="radio"
-            name="notsure"
+            name="recommendation"
             id="not_sure"
           />
-          <label class="form-survey__input--label" id="not_sure"
+          <label class="form-survey__label--recommendation" for="not_sure"
             >Not sure</label
           >
         </div>
       </div>
+
+      <label class="form-survey__label" for="preferences"
+        >What do you like most in FCC:</label
+      >
+
+      <select class="form-survey__dropdown" id="preferences">
+        <option value="select_an_option" disabled>Select an option</option>
+        <option value="challenges">Challenges</option>
+        <option value="projects">Projects</option>
+        <option value="community">Community</option>
+        <option value="open_source">Open source</option>
+      </select>
+
+      <label
+        class="form-survey__label form-survey__label--radiobutton"
+        for="plans"
+        >Things that should be improved in the future (Check all that
+        apply):</label
+      >
+
+      <div class="form-survey__checkbox" id="plans">
+        <div class="form-survey__checkbox--wrapper">
+          <input
+            type="checkbox"
+            class="form-survey__input--checkbox"
+            name="front_end_projects"
+            id="front_end_projects"
+          />
+          <label class="form-survey__label--plans" for="front_end_projects"
+            >Front end</label
+          >
+        </div>
+
+        <div class="form-survey__checkbox--wrapper">
+          <input
+            type="checkbox"
+            class="form-survey__input--checkbox"
+            name="back_end_projects"
+            id="back_end_projects"
+          />
+          <label class="form-survey__label--plans" for="back_end_projects"
+            >Back end</label
+          >
+        </div>
+
+        <div class="form-survey__checkbox--wrapper">
+          <input
+            type="checkbox"
+            class="form-survey__input--checkbox"
+            name="data_visualization"
+            id="data_visualization"
+          />
+          <label class="form-survey__label--plans" for="data_visualization"
+            >Data Visualization</label
+          >
+        </div>
+        <div class="form-survey__checkbox--wrapper">
+          <input
+            type="checkbox"
+            class="form-survey__input--checkbox"
+            name="challenges"
+            id="challenges"
+          />
+          <label class="form-survey__label--plans" for="challenges"
+            >Challenges</label
+          >
+        </div>
+        <div class="form-survey__checkbox--wrapper">
+          <input
+            type="checkbox"
+            class="form-survey__input--checkbox"
+            name="open_source_community"
+            id="open_source_community"
+          />
+          <label class="form-survey__label--plans" for="open_source_community"
+            >Open source community</label
+          >
+        </div>
+
+        <div class="form-survey__checkbox--wrapper">
+          <input
+            type="checkbox"
+            class="form-survey__input--checkbox"
+            name="wiki"
+            id="wiki"
+          />
+          <label class="form-survey__label--plans" for="wiki">Wiki</label>
+        </div>
+      </div>
+
+      <label class="form-survey__label" for="comments">
+        Any Comments or Suggestions?
+      </label>
+      <textarea
+        class="form-survey__textarea"
+        rows="4"
+        cols="50"
+        placeholder="Enter your comment here..."
+        id="comments"
+      ></textarea>
+
+      <button class="form-survey__button">Submit</button>
     </form>
   </body>
 </html>
