@@ -9,6 +9,8 @@ body {
   display: flex;
   background-color: #ccc;
   border-bottom: 1px solid #f62e9b;
+  position: sticky;
+  top: 0;
 }
 
 .nav__list {
@@ -16,10 +18,12 @@ body {
   list-style: none;
   width: 90%;
   justify-content: flex-end;
+
 }
 
 .nav__item {
   margin: .5rem 0 0 30px;
+
 }
 
 .nav__link {
@@ -43,6 +47,8 @@ body {
     display: column;
     background-color: #ccc;
     border-bottom: 1px solid #f62e9b;
+    position: sticky;
+    top: 0;
   }
 
   .nav__list {
