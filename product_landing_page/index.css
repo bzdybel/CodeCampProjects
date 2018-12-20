@@ -1,16 +1,19 @@
 @import "https://fonts.googleapis.com/css?family=Lato:400,700";
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #eee;
   margin: 0;
-  box-sizing: border-box;
   font-family: "Lato", sans-serif;
 }
 
 .nav {
   display: flex;
   background-color: #ccc;
-  box-shadow: 0px 1px #888888;
+  box-shadow: 0px 1px 4px 0px rgb(113, 111, 113);
   position: sticky;
   top: 0;
 }
@@ -18,18 +21,26 @@ body {
 .nav__list {
   display: flex;
   list-style: none;
-  width: 90%;
+  width: 100%;
+  padding: 0%;
   justify-content: flex-end;
 }
 
 .nav__item {
-  margin: 0.5rem 0 0 30px;
+  display: flex;
+  align-items: center;
+  margin: 0 5rem 0 30px;
 }
 
 .nav__link {
   display: flex;
   text-decoration: none;
-  color: black;
+  color: #333;
+}
+
+.nav__link:hover {
+  transition: 300ms;
+  color: darkorange;
 }
 
 .nav__item--logo {
@@ -38,15 +49,11 @@ body {
 
 .nav__item--img {
   width: 300px;
-  height: 30px;
 }
 
 @media screen and (max-width: 600px) {
   .nav__list {
-    display: flex;
     flex-direction: column;
-    list-style: none;
-    width: 90%;
   }
 
   .nav__item {
