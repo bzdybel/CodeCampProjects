@@ -22,21 +22,22 @@ body {
   display: flex;
   list-style: none;
   width: 100%;
-  padding: 0%;
+  margin: 0;
   justify-content: flex-end;
 }
 
 .nav__item {
   display: flex;
   align-items: center;
-  margin: -2rem 3rem -2rem 30px;
+  margin: 0 3rem 0 30px;
 }
 
 .nav__link {
   display: flex;
   text-decoration: none;
   color: #333;
-  padding: 2rem;
+  padding: 1rem;
+
 }
 
 .nav__link:hover {
@@ -61,4 +62,3 @@ body {
   .nav__item {
     margin: 2px auto;
   }
-}
