@@ -67,6 +67,7 @@ body {
   display: flex;
   flex-direction: column;
   margin-top: 1.5rem;
+  padding: .5rem;
 }
 
 .get-started-section {
