@@ -81,15 +81,17 @@ body {
   margin-bottom: 1.5rem;
 }
 
-.get-started-section__wrapper {
+.get-started-section__form {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .get-started-section__input {
-  margin: 0 18% 1rem 18%;
+  margin-bottom: 1rem;
+  width: 280px;
   padding: 5px;
   border-radius: 2px;
   background-color: #eee;
@@ -108,7 +110,7 @@ body {
 .get-started-section__button {
   justify-content: center;
   display: flex;
-  margin: 0 30%;
+  width: 170px;
   background-color: #f1c40f;
   padding: 5px 20px;
   font-size: 1rem;
