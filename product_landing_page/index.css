@@ -137,12 +137,6 @@ body {
   grid-row-gap: 3rem;
 }
 
-/* .advantages-section__wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-} */
-
 .advantages-section__title {
   margin-bottom: 0rem;
 }
@@ -163,9 +157,5 @@ body {
 
   .get-started-section__title {
     text-align: center;
-  }
-
-  .container__item--video {
-    width: auto;
   }
 }
