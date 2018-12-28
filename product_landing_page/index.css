@@ -123,17 +123,16 @@ body {
   display: grid;
   max-width: 50rem;
   grid-template-columns: 4rem 1fr;
-  grid-column-gap: 3rem;
-  grid-row-gap: 3rem;
+  grid-gap: 3rem;
 }
 
 .advantages-section__title {
   margin-bottom: 0rem;
-  padding-left: 0.5rem;
 }
 .advantages-section__description {
   margin-top: 0rem;
-  padding: 0 0.5rem;
+  padding-top: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .advantages-section__icon {
