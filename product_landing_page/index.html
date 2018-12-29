@@ -1,134 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
 
-<head>
-  <meta charset="utf-8" />
+    <title>Product Landing Page</title>
+    <meta name="description" content="Product Landing Page by freeCodeCamp" />
+    <meta name="author" content="Bartlomiej Zdybel" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+    <link
+      rel="icon"
+      href="https://upload.wikimedia.org/wikipedia/commons/c/ce/Britannica_Trombone_Contrabass.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
 
-  <title>Product Landing Page</title>
-  <meta name="description" content="Product Landing Page by freeCodeCamp" />
-  <meta name="author" content="Bartlomiej Zdybel" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-  <link rel="stylesheet" type="text/css" href="./index.css" />
-  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/c/ce/Britannica_Trombone_Contrabass.png" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <body>
+    <nav class=" nav">
+      <ul class="nav__list">
+        <li class="nav__item nav__item--logo">
+          <a class="nav__link" href="#"
+            ><img
+              class="nav__item--img"
+              src="https://s3.amazonaws.com/freecodecamp/original_trombones.png?fbclid=IwAR115PP7WG7jWphzZbIJdIXhZMTidIt8wLCEwjCDcoKS8wr2b3-SPXfNM7E"
+          /></a>
+        </li>
 
-</head>
+        <li class="nav__item"><a href="#" class="nav__link">Features</a></li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">How It Works</a>
+        </li>
+        <li class="nav__item"><a href="#" class="nav__link">Pricing</a></li>
+      </ul>
+    </nav>
 
-<body>
-  <nav class=" nav">
-    <ul class="nav__list">
-      <li class="nav__item nav__item--logo">
-        <a class="nav__link" href="#"><img class="nav__item--img" src="https://s3.amazonaws.com/freecodecamp/original_trombones.png?fbclid=IwAR115PP7WG7jWphzZbIJdIXhZMTidIt8wLCEwjCDcoKS8wr2b3-SPXfNM7E" /></a>
-      </li>
+    <div class="container">
+      <section class="get-started-section">
+        <form class="get-started-section__form">
+          <h2 class="get-started-section__title">
+            Handcrafted, home-made masterpieces
+          </h2>
+          <input
+            type="email"
+            class="get-started-section__input"
+            placeholder="michel.angelo@outlook.com"
+          />
+          <button class="get-started-section__button" type="submit">
+            Get started
+          </button>
+        </form>
+      </section>
 
-      <li class="nav__item"><a href="#" class="nav__link">Features</a></li>
-      <li class="nav__item">
-        <a href="#" class="nav__link">How It Works</a>
-      </li>
-      <li class="nav__item"><a href="#" class="nav__link">Pricing</a></li>
-    </ul>
-  </nav>
+      <section class="advantages-section">
+        <i
+          class="advantages-section__icon fa fa-3x fa-fire"
+          aria-hidden="true"
+        ></i>
 
-  <div class="container">
-    <section class="get-started-section">
-      <form class="get-started-section__form">
-        <h2 class="get-started-section__title">
-          Handcrafted, home-made masterpieces
-        </h2>
-        <input type="email" class="get-started-section__input" placeholder="michel.angelo@outlook.com" />
-        <button class="get-started-section__button" type="submit">
-          Get started
-        </button>
-      </form>
-    </section>
+        <div>
+          <h2 class="advantages-section__title">Premium Materials</h2>
+          <p class="advantages-section__description">
+            Our trombones use the shiniest brass which is sourced locally. This
+            will increase the longevity of your purchase.
+          </p>
+        </div>
 
-    <section class="advantages-section">
+        <i
+          class="advantages-section__icon fa fa-3x fa-truck"
+          aria-hidden="true"
+        ></i>
 
+        <div>
+          <h2 class="advantages-section__title">Fast Shipping</h2>
+          <p class="advantages-section__description">
+            We make sure you recieve your trombone as soon as we have finished
+            making it. We also provide free returns if you are not satisfied.
+          </p>
+        </div>
 
-      <i class="advantages-section__icon fa fa-3x fa-fire" aria-hidden="true"></i>
+        <i
+          class="advantages-section__icon fa fa-3x fa-battery-full"
+          aria-hidden="true"
+        ></i>
 
-      <div>
-        <h2 class="advantages-section__title">Premium Materials</h2>
-        <p class="advantages-section__description">
-          Our trombones use the shiniest brass which is sourced locally.
-          This will increase the longevity of your purchase.
-        </p>
-      </div>
+        <div>
+          <h2 class="advantages-section__title">Quality Assurance</h2>
+          <p class="advantages-section__description">
+            For every purchase you make, we will ensure there are no damages or
+            faults and we will check and test the pitch of your instrument.
+          </p>
+        </div>
+      </section>
 
+      <iframe class="video" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+      </iframe>
 
-      <i class="advantages-section__icon fa fa-3x fa-truck" aria-hidden="true"></i>
-
-      <div>
-        <h2 class="advantages-section__title">Fast Shipping</h2>
-        <p class="advantages-section__description">
-          We make sure you recieve your trombone as soon as we have finished
-          making it. We also provide free returns if you are not satisfied.
-        </p>
-      </div>
-
-
-      <i class="advantages-section__icon fa fa-3x fa-battery-full" aria-hidden="true"></i>
-
-      <div>
-        <h2 class="advantages-section__title">Quality Assurance</h2>
-        <p class="advantages-section__description">
-          For every purchase you make, we will ensure there are no damages
-          or faults and we will check and test the pitch of your instrument.
-        </p>
-      </div>
-
-
-    </section>
-
-
-    <iframe class="video" src="https://www.youtube.com/embed/tgbNymZ7vqY">
-    </iframe>
-
-
-    <section class="pricing-section">
-      <div class="pricing-section__item">
-        <legend class="pricing-section__item--title">Tenor Trombone</legend>
-        <h2 class="pricing-section__item--price">600$</h2>
-        <ol class="pricing-section__item--description">
-          <li class="pricing-section__item-description--text"> Lorem ipsum.</li>
-          <li class="pricing-section__item-description--text">Lorem ipsum.</li>
-          <li class="pricing-section__item-description--text">Lorem ipsum dolor.</li>
-          <li class="pricing-section__item-description--text">Lorem ipsum.</li>
-        </ol>
-        <button class="pricing-section__item--button" type="submit">Select</button>
-      </div>
-      <div class="pricing-section__item">
-        <legend class="pricing-section__item--title">Bass Trombone</legend>
-        <h2 class="pricing-section__item--price">900$</h2>
-        <ol class="pricing-section__item--description">
-          <li class="pricing-section__item-description--text">Lorem ipsum.</li>
-          <li class="pricing-section__item-description--text">Lorem ipsum.</li>
-          <li class="pricing-section__item-description--text">Lorem ipsum dolor.</li>
-          <li class="pricing-section__item-description--text">Lorem ipsum.</li>
-        </ol>
-        <button class="pricing-section__item--button" type="submit">Select</button>
-
-      </div>
-      <div class="pricing-section__item">
-        <legend class="pricing-section__item--title">Valve Trombone</legend>
-        <h2 class="pricing-section__item--price">1200$</h2>
-        <ol class="pricing-section__item--description">
-          <li class="pricing-section__item-description--text">Plays similar to a Trumpet</li>
-          <li class="pricing-section__item-description--text">Great for Jazz Bands</li>
-          <li class="pricing-section__item-description--text">Lorem ipsum dolor.</li>
-          <li class="pricing-section__item-description--text">Lorem ipsum.</li>
-        </ol>
-        <button class="pricing-section__item--button" type="submit">Select</button>
-
-      </div>
-
-
-    </section>
-
-
-
-  </div>
-
-</body>
-
+      <section class="pricing-section">
+        <div class="pricing-section__item">
+          <legend class="pricing-section__title">Tenor Trombone</legend>
+          <h2 class="pricing-section__price">600$</h2>
+          <ul class="pricing-section__description-list">
+            <li class="pricing-section__description">Lorem ipsum.</li>
+            <li class="pricing-section__description">Lorem ipsum.</li>
+            <li class="pricing-section__description">Lorem ipsum dolor.</li>
+            <li class="pricing-section__description">Lorem ipsum.</li>
+          </ul>
+          <button class="pricing-section__button" type="button">Select</button>
+        </div>
+        <div class="pricing-section__item">
+          <legend class="pricing-section__title">Bass Trombone</legend>
+          <h2 class="pricing-section__price">900$</h2>
+          <ul class="pricing-section__description-list">
+            <li class="pricing-section__description">Lorem ipsum.</li>
+            <li class="pricing-section__description">Lorem ipsum.</li>
+            <li class="pricing-section__description">Lorem ipsum dolor.</li>
+            <li class="pricing-section__description">Lorem ipsum.</li>
+          </ul>
+          <button class="pricing-section__button" type="submit">Select</button>
+        </div>
+        <div class="pricing-section__item">
+          <legend class="pricing-section__title">Valve Trombone</legend>
+          <h2 class="pricing-section__price">1200$</h2>
+          <ul class="pricing-section__description-list">
+            <li class="pricing-section__description">
+              Plays similar to a Trumpet
+            </li>
+            <li class="pricing-section__description">Great for Jazz Bands</li>
+            <li class="pricing-section__description">Lorem ipsum dolor.</li>
+            <li class="pricing-section__description">Lorem ipsum.</li>
+          </ul>
+          <button class="pricing-section__button" type="submit">Select</button>
+        </div>
+      </section>
+    </div>
+  </body>
 </html>
