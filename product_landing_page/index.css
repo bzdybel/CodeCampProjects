@@ -129,6 +129,7 @@ body {
 .advantages-section__title {
   margin-bottom: 0rem;
 }
+
 .advantages-section__description {
   margin-top: 0rem;
   padding-top: 0.5rem;
@@ -146,6 +147,62 @@ body {
   height: 315px;
 }
 
+.pricing-section {
+  margin: 3rem auto;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.pricing-section__item {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 5px 5px 1px #aaa;
+  margin: 1rem;
+  justify-content: center;
+  flex: 0 0 20rem;
+}
+
+.pricing-section__title {
+  text-align: center;
+  padding: 1rem 0;
+  background: #ddd;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.pricing-section__price {
+  text-align: center;
+}
+
+.pricing-section__description-list {
+  text-align: center;
+  padding: 0;
+  margin: 0 auto 2rem auto;
+}
+
+.pricing-section__description {
+  list-style: none;
+  padding-bottom: 0.7rem;
+}
+
+.pricing-section__button {
+  margin: 0 auto 1rem auto;
+  padding: 0.7rem 1.2rem;
+  text-transform: uppercase;
+  background-color: #f1c40f;
+  border-style: none;
+  border-radius: 2px;
+  font-size: 1rem;
+}
+
+.pricing-section__button:hover {
+  cursor: pointer;
+  transition-duration: 400ms;
+  background-color: darkorange;
+}
+
 @media screen and (max-width: 600px) {
   .nav__list {
     flex-direction: column;
@@ -154,6 +211,7 @@ body {
   .nav__item {
     margin: 2px auto;
   }
+
   .container {
     margin: 1rem auto;
     flex-direction: column;
@@ -166,6 +224,7 @@ body {
   .advantages-section {
     grid-column-gap: 1.5rem;
   }
+
   .video {
     width: 90%;
   }
