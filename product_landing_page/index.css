@@ -206,6 +206,7 @@ body {
 .footer {
   width: 100%;
   background: #ddd;
+  padding: 0.5rem 1rem 0 0;
 }
 
 .footer__link {
@@ -230,14 +231,34 @@ body {
   display: flex;
   justify-content: flex-end;
 }
+.toggle {
+  display: none;
+  text-align: right;
+  width: 100%;
+  padding: 1rem;
+  background: #ccc;
+}
 
 @media screen and (max-width: 600px) {
   .nav__list {
     flex-direction: column;
+    text-align: left;
+    padding-left: 0;
   }
 
   .nav__item {
+    width: 100%;
+    text-align: left;
     margin: 2px auto;
+  }
+  .nav__item:hover {
+    background: #bbb;
+  }
+  .nav__link:hover {
+    opacity: 1;
+  }
+  .nav__item--logo {
+    display: none;
   }
 
   .container {
@@ -255,5 +276,13 @@ body {
 
   .video {
     width: 90%;
+  }
+  .toggle {
+    display: flex;
+    font-size: 1.5rem;
+    text-align: right;
+  }
+  .toggle__icon:hover {
+    opacity: 0.5;
   }
 }
