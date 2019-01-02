@@ -24,19 +24,21 @@ body {
   width: 100%;
   margin: 0;
   justify-content: flex-end;
+  padding-left: 0;
 }
 
 .nav__item {
   display: flex;
   align-items: center;
-  margin: 0 3rem 0 30px;
+  margin: 0 3rem 0 0;
+  white-space: nowrap;
 }
 
 .nav__link {
   display: flex;
   text-decoration: none;
   color: #333;
-  padding: 1rem;
+  padding: 1rem 1rem 1rem 0;
 }
 
 .nav__link:hover {
@@ -231,7 +233,7 @@ body {
   display: flex;
   justify-content: flex-end;
 }
-.toggle {
+.nav__list--toggle {
   display: none;
   text-align: right;
   width: 100%;
@@ -239,11 +241,10 @@ body {
   background: #ccc;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
   .nav__list {
     flex-direction: column;
     text-align: left;
-    padding-left: 0;
   }
 
   .nav__item {
@@ -277,12 +278,12 @@ body {
   .video {
     width: 90%;
   }
-  .toggle {
+  .nav__list--toggle {
     display: flex;
     font-size: 1.5rem;
     text-align: right;
   }
-  .toggle__icon:hover {
+  .nav__list--toggle-icon:hover {
     opacity: 0.5;
   }
 }
