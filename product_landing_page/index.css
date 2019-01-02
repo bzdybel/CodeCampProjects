@@ -57,7 +57,7 @@ body {
   display: flex;
   flex-direction: column;
   margin-top: 1.5rem;
-  padding: 0.5rem;
+  padding: 0.5rem 0.5rem 0 0.5rem;
   align-items: center;
 }
 
@@ -201,6 +201,34 @@ body {
   cursor: pointer;
   transition-duration: 400ms;
   background-color: darkorange;
+}
+
+.footer {
+  width: 100%;
+  background: #ddd;
+}
+
+.footer__link {
+  color: #333;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+.footer__link:hover {
+  transition: 300ms;
+  opacity: 0.6;
+}
+
+.footer__copyright {
+  display: flex;
+  justify-content: flex-end;
+  color: #555;
+  padding: 0.5rem;
+}
+
+.footer__links {
+  display: flex;
+  justify-content: flex-end;
 }
 
 @media screen and (max-width: 600px) {
