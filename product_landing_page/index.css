@@ -204,38 +204,32 @@ body {
 }
 
 .footer {
-  width: 75%;
+  width: 100%;
   background: #ddd;
-  display: flex;
-  flex-direction: column;
 }
 
 .footer__link {
   color: #333;
-  display: flex;
   text-decoration: none;
-  padding: .5rem 0 0 .5rem;
-  margin-right: 1.5rem;
+  padding: 0.5rem;
 }
 
 .footer__link:hover {
   transition: 300ms;
-  opacity: 0.4;
+  opacity: 0.6;
 }
 
 .footer__copyright {
   display: flex;
   justify-content: flex-end;
   color: #555;
-  margin-right: 1rem;
+  padding: 0.5rem;
 }
 
-.footer__item {
+.footer__links {
   display: flex;
   justify-content: flex-end;
 }
-
-
 
 @media screen and (max-width: 600px) {
   .nav__list {
