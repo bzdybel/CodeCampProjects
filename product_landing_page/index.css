@@ -58,6 +58,12 @@ body {
   background: #bbb;
 }
 
+.nav__item--toggle {
+  display: none;
+  padding: 1rem;
+  background: #ccc;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -235,12 +241,6 @@ body {
 .footer__links {
   display: flex;
   justify-content: flex-end;
-}
-.nav__item--toggle {
-  display: none;
-  text-align: right;
-  padding: 1rem;
-  background: #ccc;
 }
 
 @media screen and (max-width: 750px) {
