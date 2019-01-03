@@ -30,7 +30,7 @@ body {
 .nav__item {
   display: flex;
   align-items: center;
-  margin: 0 3rem 0 0;
+  margin: 0 1rem 0 0;
   white-space: nowrap;
 }
 
@@ -38,7 +38,7 @@ body {
   display: flex;
   text-decoration: none;
   color: #333;
-  padding: 1rem 1rem 1rem 0;
+  padding: 1rem;
 }
 
 .nav__link:hover {
@@ -233,7 +233,7 @@ body {
   display: flex;
   justify-content: flex-end;
 }
-.nav__list--toggle {
+.nav__item--toggle {
   display: none;
   text-align: right;
   width: 100%;
@@ -244,17 +244,17 @@ body {
 @media screen and (max-width: 750px) {
   .nav__list {
     flex-direction: column;
-    text-align: left;
   }
 
   .nav__item {
-    width: 100%;
-    text-align: left;
+    text-align: center;
     margin: 2px auto;
+    border-bottom: 1px solid #777;
   }
   .nav__item:hover {
     background: #bbb;
   }
+
   .nav__link:hover {
     opacity: 1;
   }
@@ -278,12 +278,13 @@ body {
   .video {
     width: 90%;
   }
-  .nav__list--toggle {
+  .nav__item--toggle {
     display: flex;
     font-size: 1.5rem;
     text-align: right;
+    border-bottom: none;
   }
-  .nav__list--toggle-icon:hover {
+  .nav__toggle-icon:hover {
     opacity: 0.5;
   }
 }
