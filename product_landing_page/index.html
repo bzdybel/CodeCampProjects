@@ -21,11 +21,8 @@
   <body>
     <nav class=" nav">
       <ul class="nav__list">
-        <li class="nav__item nav__item--toggle">
-          <i
-            class="nav__toggle-icon fa fa fa-bars"
-            onclick="alertFunction()"
-          ></i>
+        <li class="nav__item nav__item--toggle" onclick="handleToggleNavBar()">
+          <i class="nav__toggle-icon fa fa fa-bars"></i>
         </li>
         <li class="nav__item nav__item--logo">
           <a class="nav__link" href="#"
@@ -156,8 +153,14 @@
     </footer>
   </body>
   <script>
-    function alertFunction() {
-      alert("xd");
+    function handleToggleNavBar() {
+      const navItems = document.querySelectorAll(
+        ".nav__item:not(.nav__item--toggle):not(.nav__item--logo)"
+      );
+
+      navItems.forEach(navItem => {
+        navItem.classList.toggle("nav__item--show");
+      });
     }
   </script>
 </html>
