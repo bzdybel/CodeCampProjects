@@ -30,7 +30,6 @@ body {
 .nav__item {
   display: flex;
   align-items: center;
-  margin: 0 0rem 0 0;
   white-space: nowrap;
 }
 
@@ -39,11 +38,6 @@ body {
   text-decoration: none;
   color: #333;
   padding: 1rem;
-}
-
-.nav__link:hover {
-  transition: 300ms;
-  opacity: 0.4;
 }
 
 .nav__item--logo {
@@ -56,15 +50,15 @@ body {
 }
 .nav__item:hover {
   background: #bbb;
+  transition: 300ms;
+  opacity: 0.5;
+  cursor: pointer;
 }
 
 .nav__item--toggle {
   display: none;
   padding: 1rem;
   background: #ccc;
-}
-.nav__item--toggle:hover {
-  cursor: pointer;
 }
 
 .container {
@@ -270,12 +264,11 @@ body {
     width: 100%;
     padding: 1rem;
   }
-  .nav__toggle-icon:hover {
-    opacity: 0.5;
-  }
-
   .nav__item--logo {
     display: none;
+  }
+  .nav__item--show {
+    display: flex;
   }
 
   .container {
@@ -293,8 +286,5 @@ body {
 
   .video {
     width: 90%;
-  }
-  .nav__item--show {
-    display: flex;
   }
 }
