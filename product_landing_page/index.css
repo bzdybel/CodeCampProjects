@@ -24,12 +24,13 @@ body {
   width: 100%;
   margin: 0;
   justify-content: flex-end;
+  padding-left: 0;
 }
 
 .nav__item {
   display: flex;
   align-items: center;
-  margin: 0 3rem 0 30px;
+  white-space: nowrap;
 }
 
 .nav__link {
@@ -39,11 +40,6 @@ body {
   padding: 1rem;
 }
 
-.nav__link:hover {
-  transition: 300ms;
-  opacity: 0.4;
-}
-
 .nav__item--logo {
   margin-right: auto;
 }
@@ -51,6 +47,18 @@ body {
 .nav__item--img {
   width: 300px;
   height: 30px;
+}
+.nav__item:hover {
+  background: #bbb;
+  transition: 300ms;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.nav__item--toggle {
+  display: none;
+  padding: 1rem;
+  background: #ccc;
 }
 
 .container {
@@ -206,6 +214,7 @@ body {
 .footer {
   width: 100%;
   background: #ddd;
+  padding: 0.5rem 1rem 0 0;
 }
 
 .footer__link {
@@ -231,13 +240,35 @@ body {
   justify-content: flex-end;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
   .nav__list {
     flex-direction: column;
   }
-
+  .nav__link {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
   .nav__item {
-    margin: 2px auto;
+    display: none;
+    margin: 0px auto;
+    border-top: 1px solid #999;
+    width: 100%;
+  }
+
+  .nav__item--toggle {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 1.5rem;
+    border-top: none;
+    width: 100%;
+    padding: 1rem;
+  }
+  .nav__item--logo {
+    display: none;
+  }
+  .nav__item--show {
+    display: flex;
   }
 
   .container {

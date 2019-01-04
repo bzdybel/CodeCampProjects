@@ -21,11 +21,15 @@
   <body>
     <nav class=" nav">
       <ul class="nav__list">
+        <li class="nav__item nav__item--toggle" onclick="handleToggleNavBar()">
+          <i class="nav__toggle-icon fa fa fa-bars"></i>
+        </li>
         <li class="nav__item nav__item--logo">
           <a class="nav__link" href="#"
             ><img
               class="nav__item--img"
               src="https://s3.amazonaws.com/freecodecamp/original_trombones.png?fbclid=IwAR115PP7WG7jWphzZbIJdIXhZMTidIt8wLCEwjCDcoKS8wr2b3-SPXfNM7E"
+              alt="Original Trombones"
           /></a>
         </li>
 
@@ -148,4 +152,15 @@
       </small>
     </footer>
   </body>
+  <script>
+    function handleToggleNavBar() {
+      const navItems = document.querySelectorAll(
+        ".nav__item:not(.nav__item--toggle):not(.nav__item--logo)"
+      );
+
+      navItems.forEach(navItem => {
+        navItem.classList.toggle("nav__item--show");
+      });
+    }
+  </script>
 </html>
